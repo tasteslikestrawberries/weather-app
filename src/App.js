@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -7,6 +8,7 @@ import {
 } from "react-router-dom";
 
 //styles
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
 //components
@@ -14,6 +16,7 @@ import Home from './components/Home'
 import Login from './components/Login'
 
 const App = () => {
+
   return (
     <Router>
       <>

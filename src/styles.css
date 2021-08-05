@@ -11,61 +11,105 @@ html {
 body {
   margin:0 auto;
   box-sizing: border-box;
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 0.05rem;
-  color: #181717;
-}
-
-a {
-  text-decoration: none;
+  background-color: #f7f7f7;
 }
 
 nav {
   display:flex;
   justify-content: space-between;
   align-items: center;
-  background-color:rgb(99, 173, 238);
+  background-color:#0275d8;
   margin:auto;
-  width:70%;
-  height: 8vh;
+  width:100%;
+  height: 10vh;
   padding:1rem;
 }
 
-li {
-  display:inline;
+nav a, a:active, a:visited{
+  color:#f7f7f7;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color:rgb(255, 255, 255);
+}
+
+nav ul{
+  margin:0;
+}
+
+nav li {
+  display: inline;
   margin-right:3rem;
 }
 
-.weatherFormWrapper {
+.homeContainer {
   display:flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  background-color:aliceblue;
+  /*background-image: url(./components/assets/bgimg.jpg);*/
   margin:auto;
-  width:70%;
+  width:100%;
   min-height: 92vh;
+  box-sizing: border-box;
 }
 
-form {
- position:relative;
- text-align: center;
+.homeContainer :nth-child(1){
+  min-width: 30%;
 }
 
-button {
-  border: none;
-  border-radius: 50px;
-  background-color: rgb(255, 255, 255);
-  padding:0.5rem;
-  margin: 1rem;
-  cursor:pointer;
+.weatherIcon{
+  width:60px;
+  height:60px;
+  margin: 1rem 0;
 }
-.lowerContainer {
-  display:flex;
+
+.header {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width:70%;
-  background-color: rgb(20, 29, 117);
-  opacity:0.9;
-  margin:auto;
-  min-height: 30vh;
+  margin-bottom: 1rem;
+}
+
+.header span {
+  color:#0683f1;
+}
+
+.weatherTable{
+  display:flex;
+  flex-wrap: wrap;
+  column-gap:3rem;
+  padding:2rem;
+}
+
+.cityCountry {
+  align-self:flex-start;
+  color:#0683f1;
+  margin-bottom:1rem;
+}
+
+.weatherTable thead {
+  color:#0683f1;
+}
+
+@media (min-width: 60rem) {
+  .weatherIcon{
+    width:100px;
+    height:100px;
+  }
+  .weatherTable {
+    margin: 0 20vw;
+    min-width: 50%;
+  }
+
+  .weatherTable span{
+    font-size:larger;
+  }
+
+  nav ul{
+    font-size:larger;
+  }
 }
