@@ -52,7 +52,6 @@ nav li {
   /*background-image: url(./components/assets/bgimg.jpg);*/
   margin:auto;
   width:100%;
-  min-height: 92vh;
   box-sizing: border-box;
 }
 
@@ -61,6 +60,12 @@ nav li {
 }
 
 .weatherIcon{
+  width:60px;
+  height:60px;
+  margin: 1rem 0;
+}
+
+.loginIcon{
   width:60px;
   height:60px;
   margin: 1rem 0;
@@ -100,6 +105,13 @@ nav li {
     width:100px;
     height:100px;
   }
+
+  .loginIcon{
+    width:100px;
+    height:100px;
+    margin: 1rem 0;
+  }
+
   .weatherTable {
     margin: 0 20vw;
     min-width: 50%;
@@ -107,6 +119,16 @@ nav li {
 
   .weatherTable span{
     font-size:larger;
+  }
+
+  .weatherTable th {
+    font-size:larger;
+    text-align: center;   
+  }
+
+  .weatherTable td {
+    font-size:x-large;
+    text-align: center;
   }
 
   nav ul{

@@ -4,7 +4,7 @@ import WeatherTable from './WeatherTable';
 import WeatherForm from '../components/WeatherForm';
 
 //icons
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import weatherIcon from '@iconify/icons-flat-ui/weather';
 
 const Home = () => {
