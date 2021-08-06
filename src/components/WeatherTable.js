@@ -3,15 +3,9 @@ import React from "react";
 //styles
 import Table from 'react-bootstrap/Table'
 
-/*const ErrorMessage = () => {
-    return (
-      <>
-        <span className='errMsg' style={{display:'block'}}>Sorry, something went wrong.</span>
-      </>
-    )
-}*/
+//<span className='errMsg' style={{display:'block'}}>Sorry, something went wrong.</span>
 
-const Weather = //passing props:
+const WeatherTable = //passing props: 
     ({ 
         city,
         country,
@@ -55,4 +49,4 @@ const Weather = //passing props:
             
         };
     
-export default Weather;
+export default WeatherTable;

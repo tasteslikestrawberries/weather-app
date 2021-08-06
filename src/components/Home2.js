@@ -26,7 +26,7 @@ const Home = () => {
     // const [error, setError] = useState(false);
 
     const getWeatherData = async (event) => {
-      //by default, on submission of a form, the page will redirect and refresh - we don't want that
+      //by default browser behavior on form submission, the page will redirect and refresh - we don't want that
       event.preventDefault();
 
       //saving user input values in variables
@@ -51,7 +51,6 @@ const Home = () => {
           console.log('Something went wrong! ' + err);
           alert('Something went wrong! ' + err);
         }
-
       }
     }
 

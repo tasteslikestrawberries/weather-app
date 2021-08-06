@@ -45,7 +45,7 @@ const Home = () => {
                 console.log('Something went wrong! ' + err);
                 alert('Something went wrong! ' + err);
             }
-        }
+      }
     }
 
   return (
@@ -58,7 +58,7 @@ const Home = () => {
        <div className='homeContainer'>
        
        <WeatherForm getWeather = {getWeatherData} /> {/*declaring WeatherForm component prop(erty) getWeather and passing the getWeatherData function as prop value*/}
-
+        
        <WeatherTable //declaring props as above
                 city = {city} 
                 country = {country} 
