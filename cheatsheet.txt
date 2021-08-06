@@ -1,10 +1,46 @@
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
-10.
+MAKING A GET REQUEST TO REMOTE WEB API: my cheatsheet
+
+1. Get api key from the chosen api
+
+2. Create .env file in root folder (important) and "hide" the key in it
+   (if you're processing it from frontend react app,
+   be sure to name it REACT_APP_... otherwise it won't work)
+
+3. In App.js or in component where you will do a get request,
+   save the api key to a variable (ex:const apiKey = process.env.REACT_APP_...;)
+
+4. Install axios and import it (or any library that is used to send HTTP requests, but preferably axios )
+
+5. Create the asynchronous GET request to retrieve data from the external api. 
+   Use async/await syntax or useEffect depending on the needs
+    EXAMPLE:
+
+        const sendGetRequest = async () => {
+            try {
+                const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
+                console.log(response.data);
+            } catch (error) {
+                // Handle Error Here
+                console.error(error);
+            }
+        };
+
+        sendGetRequest();
+
+6. An Axios response for an HTTP request (the resp object in the example) will contain the 
+   following information about the HTTP response:
+
+        data - The response body provided by the server. If the response from the server is a JSON, Axios will automatically parse data into a JavaScript object.
+        status - The HTTP status code from the response e.g. 200, 400, 404.
+        statusText - The HTTP status message from the server response e.g. OK, Bad Request, Not Found.
+        headers - The HTTP headers accompanying the response.
+        config - The configuration that was provided to the Axios API for the request.
+        request - The native request that generated the response. In Node.js this will be a ClientRequest object. In the browser, this will be an XMLHTTPRequest object.
+
+7. Display data in component's return()
+
+8. If data is fetched via form onSubmit, don't forget to add event.preventDefault();
+  to stop the page from redirecting/refreshing (default browser onSubmit behavior)
+  Also, check that the button has type='submit'.
+
+9. You're done! :) For other request types, check: https://stackabuse.com/making-asynchronous-http-requests-in-javascript-with-axios 

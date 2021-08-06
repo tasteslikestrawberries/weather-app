@@ -19,7 +19,7 @@ const WeatherTable = //passing props:
                 <>
                     <div className='weatherTable'>
 
-                        { city  ? <span className='cityCountry'><h3>{ city }, { country }</h3></span> : null }
+                        { city && country  ? <span className='cityCountry'><h3>{ city }, { country }</h3></span> : null }
                     
                         <Table striped bordered hover>
                             <thead>

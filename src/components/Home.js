@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import axios from 'axios';
 import WeatherTable from './WeatherTable';
@@ -29,9 +30,9 @@ const Home = () => {
       event.preventDefault(); //by default, on submission of a form, the page will redirect and refresh - we don't want that
       
       const city = event.target.elements.city.value;
-      //const country = event.target.elements.country.value; //uncomment if input field for country is needed in WeatherForm
+      const country = event.target.elements.country.value; 
       
-      if ( (city && country) || city ) { 
+      if ( city ) { 
             try { 
                 const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&mode=json&units=metric&appid=${apiKey}`);
             

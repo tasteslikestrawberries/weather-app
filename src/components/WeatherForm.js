@@ -14,6 +14,10 @@ const WeatherForm = ( {getWeather} ) => {
     <>
         <Form className='box' onSubmit={getWeather}> {/* passing the prop to the form onSubmit event- !!!check event targets/button onClick difference - https://developer.mozilla.org/en-US/docs/Web/API/Event/target */}
 
+        <Form.Group className='mb-3' controlId='country'>
+                <Form.Control type='text' placeholder='Country' />
+            </Form.Group>
+
             <Form.Group className='mb-3' controlId='city'>
                 <Form.Control type='text' placeholder='City' />
             </Form.Group>
