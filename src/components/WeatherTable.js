@@ -15,7 +15,7 @@ const Weather = //passing props:
         return (
             <>
                 <div className='weatherTable'>
-                    { city || city && country ? <span className='cityCountry'><h3>{ city }, { country }</h3></span> : null }
+                    { (city && country) || city  ? <span className='cityCountry'><h3>{ city }, { country }</h3></span> : null }
                     <Table striped bordered hover>
                         <thead>
                             <tr>

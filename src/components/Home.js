@@ -25,21 +25,21 @@ const Home = () => {
     // const [isLoading, setLoading] = useState();
     // const [error, setError] = useState(false);
 
-    const getWeather = async (e) => {
+    const getWeatherData = async (event) => {
       //prevents new browser tab from opening
-      e.preventDefault();
+      event.preventDefault();
 
       //getting the user input values
       /* e.currentTarget always refers to the element to which
        the event handler has been attached, as opposed to event.target,
       which identifies the element on which the event occurred and which may be its descendant.*/
 
-      const city = e.target.elements.city.value;
-      const country = e.target.elements.country.value;
+      const city = event.target.elements.city.value;
+      const country = event.target.elements.country.value;
       //console.log(e.target.elements);
       //have to change this if doing it via button onClick
 
-      if (city || city && country) { //if user has inputted just city value or both values do axios.get request
+      if ( (city && country) || city ) { //if user has inputted just city value or both values do axios.get request
           const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&mode=json&units=metric&appid=${apiKey}`);
           //console.log(response);
         
@@ -63,9 +63,9 @@ const Home = () => {
 
        <div className='homeContainer'>
        
-       <WeatherForm getWeather={getWeather} /> {/*declaring WeatherForm component property (first getWeather) and passing the getWeather function as prop value*/}
+       <WeatherForm getWeather = {getWeatherData} /> {/*declaring WeatherForm component prop(erty) getWeather and passing the getWeatherData function as prop value*/}
 
-       <WeatherTable
+       <WeatherTable //declaring props as above
                 city = {city} 
                 country = {country} 
                 temp = {temp} 
