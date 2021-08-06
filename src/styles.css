@@ -100,6 +100,14 @@ nav li {
   color:#0683f1;
 }
 
+.errMsg{
+  display:none;
+  font-size: smaller;
+  margin-bottom:1rem;
+  color:#e41b1b;
+  margin: 1rem auto;
+}
+
 @media (min-width: 60rem) {
   .weatherIcon{
     width:100px;
@@ -134,4 +142,5 @@ nav li {
   nav ul{
     font-size:larger;
   }
+
 }
