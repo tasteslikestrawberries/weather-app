@@ -14,6 +14,7 @@ body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.05rem;
   background-color: #f7f7f7;
+  color: #242526;
 }
 
 nav {
@@ -59,6 +60,14 @@ nav li {
   min-width: 30%;
 }
 
+.aboutText{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:0 3rem;
+  font-size: medium;
+}
+
 .weatherIcon{
   width:60px;
   height:60px;
@@ -83,28 +92,12 @@ nav li {
   color:#0d6efd;
 }
 
-
-/*SPINNER*/
-.loader {
-  margin-top:1rem;
-  border: 4px solid #f3f3f3;
-  border-top: 4px solid #0d6efd; 
-  border-radius: 50%;
-  width: 25px;
-  height: 25px;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
 .weatherTable{
   display:flex;
   flex-wrap: wrap;
   column-gap:3rem;
   margin:2rem;
+  box-sizing: border-box;
 }
 
 .cityCountry {
@@ -123,8 +116,28 @@ nav li {
   margin: 2rem 0rem 0rem 2rem;
 }
 
+/*SPINNER*/
+.loader {
+  margin-top:1rem;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #0d6efd; 
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 /*DESKTOP SCREENS*/
 @media (min-width: 60rem) {
+  .aboutText{
+    font-size: large;
+  }
+
   .weatherIcon{
     width:100px;
     height:100px;

@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "@iconify/icons-bx": "^1.1.2",
+    "@iconify/icons-entypo-social": "^1.1.0",
     "@iconify/icons-flat-ui": "^1.1.0",
     "@iconify/icons-fluent": "^1.1.23",
     "@iconify/react": "^1.1.4"

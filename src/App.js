@@ -12,8 +12,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
 //components
-import Home from './components/Home'
-import Login from './components/Login'
+import Weather from './components/Weather/Weather'
+import Login from './components/Login/Login'
 import About from './components/About'
 
 const App = () => {
@@ -24,7 +24,7 @@ const App = () => {
         <nav>
               <ul>
                   <li> 
-                     <Link to='/'>Home</Link>
+                     <Link to='/'>Weather</Link>
                   </li>
                   <li> 
                      <Link to='/login'>Login</Link>
@@ -45,7 +45,7 @@ const App = () => {
             </Route>
 
             <Route path='/'>
-              <Home />
+              <Weather />
             </Route>
         </Switch>
 

@@ -3,6 +3,7 @@ import React from 'react';
 //icons
 import { Icon } from '@iconify/react';
 import info24Filled from '@iconify/icons-fluent/info-24-filled';
+import githubIcon from '@iconify/icons-entypo-social/github';
 
 const About = () => {
   return (
@@ -13,8 +14,15 @@ const About = () => {
       </div>
 
       <div className='homeContainer'>
-      <h5 style={{fontWeight:'200'}}>Hello! I made this app to practice OAuth 2.0 authentication and fetching data from an external API.</h5>
-      Check my website at <a href='http://tasteslikestrawberries.github.io' style={{color:'#0d6efd'}} target='_blank'>http://tasteslikestrawberries.github.io</a>
+        <h5 className='aboutText' style={{fontWeight:'200'}}>
+          Hello! This app was made to practice OAuth 2.0 authentication and fetching data from external APIs.
+        </h5>
+        
+        <br/>
+        Check out my Github profile: 
+        <a href='http://github.com/tasteslikestrawberries' style={{color:'#0d6efd'}} target='_blank' rel='noreferrer'>
+          <Icon icon={githubIcon} style={{fontSize: '43px', color: '#242526', margin: '1rem 0'}} />
+        </a>
       </div>
     </>
   )
