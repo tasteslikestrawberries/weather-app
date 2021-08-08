@@ -83,11 +83,28 @@ nav li {
   color:#0d6efd;
 }
 
+
+/*SPINNER*/
+.loader {
+  margin-top:1rem;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #0d6efd; 
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .weatherTable{
   display:flex;
   flex-wrap: wrap;
   column-gap:3rem;
-  padding:2rem;
+  margin:2rem;
 }
 
 .cityCountry {
@@ -101,13 +118,12 @@ nav li {
 }
 
 .errMsg{
-  display:none;
-  font-size: smaller;
-  margin-bottom:1rem;
+  font-size: medium;
   color:#e41b1b;
-  margin: 1rem auto;
+  margin: 2rem 0rem 0rem 2rem;
 }
 
+/*DESKTOP SCREENS*/
 @media (min-width: 60rem) {
   .weatherIcon{
     width:100px;
@@ -123,6 +139,7 @@ nav li {
   .weatherTable {
     margin: 0 20vw;
     min-width: 50%;
+    margin-top:3rem;
   }
 
   .weatherTable span{
@@ -144,3 +161,4 @@ nav li {
   }
 
 }
+

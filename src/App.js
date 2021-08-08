@@ -14,6 +14,7 @@ import './styles.css';
 //components
 import Home from './components/Home'
 import Login from './components/Login'
+import About from './components/About'
 
 const App = () => {
 
@@ -29,12 +30,16 @@ const App = () => {
                      <Link to='/login'>Login</Link>
                   </li>
                   <li> 
-                     <Link to=''>About</Link>
+                     <Link to='/about'>About</Link>
                   </li>
               </ul>
           </nav>
 
           <Switch>
+            <Route path='/about'>
+              <About />
+            </Route>
+
             <Route path='/login'>
               <Login />
             </Route>
