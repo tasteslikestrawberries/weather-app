@@ -96,18 +96,33 @@ nav li {
   display:flex;
   flex-wrap: wrap;
   column-gap:3rem;
-  margin:2rem;
   box-sizing: border-box;
 }
 
 .cityCountry {
   align-self:flex-start;
   color:#0d6efd;
-  margin-bottom:1rem;
+  margin-top:2rem;
+  margin-bottom: 1rem;
+  margin-left:1rem;
 }
 
-.weatherTable thead {
+.cityCountry h3 {
+  font-size: larger;
+}
+
+.weatherTable th {
   color:#0d6efd;
+  font-weight: bold;
+  font-size: smaller;
+  
+  white-space: normal !important;
+  word-wrap:break-word;
+}
+
+.openWeatherIcon {
+  display: inline-block;
+  max-width: 0px
 }
 
 .errMsg{

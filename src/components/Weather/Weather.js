@@ -19,6 +19,7 @@ const Weather = () => {
     const [country, setCountry] = useState('');
 
     const [description, setDescription] = useState('');
+    const [icon, setIcon] = useState('');
     const [temp, setTemp] = useState('');
     const [temp_min, setTemp_min] = useState('');
     const [temp_max, setTemp_max] = useState('');
@@ -57,6 +58,7 @@ const Weather = () => {
                   setTemp_max(response.data.main.temp_max);
                   setTemp_min(response.data.main.temp_min);
                   setDescription(response.data.weather[0].description); //[0] - weather is an array so displaying only first element, doesn't work without it
+                  setIcon(response.data.weather[0].icon); 
 
                   if (isInitialRender) {setIsInitialRender(false)}
           } catch (err) {
@@ -94,7 +96,8 @@ const Weather = () => {
                   temp = {temp} 
                   temp_max = {temp_max}
                   temp_min = {temp_min}
-                  description = {description} />
+                  description = {description} 
+                  icon = {icon} />
             </div>
         
         </>

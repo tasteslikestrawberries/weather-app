@@ -12,7 +12,8 @@ const WeatherTable = ({
     temp,
     temp_max,
     temp_min,
-    description
+    description,
+    icon
     }) => {
     
     return (
@@ -27,25 +28,29 @@ const WeatherTable = ({
                         <>
                             { city && country ? <span className='cityCountry'><h3>{ city }, { country }</h3></span> : null }
                             
-                            <Table striped bordered hover>
+                            <Table striped bordered hover style={{maxWidth:'100%'}}>
                                 <thead>
                                     <tr>
-                                    <th>Temperature °C</th>
-                                    <th>Min-Max °C</th>
-                                    <th>Weather Description</th>
+                                    <th>°C</th>
+                                    <th>Min./Max. °C</th>
+                                    <th>Description</th>
                                     </tr>
                                 </thead>
 
                                 <tbody>
                                     <tr>
                                     {/*Math.floor() function returns the largest integer less than or equal to a given number */}
-                                    <td>{ temp ? <span>{ Math.floor(temp) }&deg;</span> : null }</td>
-                                    <td>  { temp_min && temp_max 
+                                    <td className='align-middle'>{ temp ? <span>{ Math.floor(temp) }&deg;</span> : null }</td>
+                                    <td className='align-middle'>  { temp_min && temp_max 
                                                 ? <span>{ Math.floor(temp_min) }&deg; - { Math.floor(temp_max) }&deg;</span>
                                                 : null 
                                             }
                                     </td>
-                                    <td>{ description }</td>
+                                    <td className='align-middle'> 
+                                        <img className='openWeatherIcon' src={`http://openweathermap.org/img/w/${icon}.png`} /> 
+                                        { description }
+                                    </td>
+                                    
                                     </tr>
                                 </tbody>
                             </Table>
