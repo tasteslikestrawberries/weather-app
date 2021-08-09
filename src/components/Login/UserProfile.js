@@ -25,7 +25,7 @@ const UserProfile = () => {
         <span><h4>{user.email}</h4></span>
       </div>
     : <div className='noUser'>
-      <h5>Please <Button  onClick={() => loginWithRedirect()}  type='submit' value='search' variant='primary' style={{fontSize:'large'}}>Log In</Button> to view this page.</h5>
+      Please &nbsp; <Button  onClick={() => loginWithRedirect()}  type='submit' value='search' variant='primary' style={{fontSize:'large'}}>Log In</Button> &nbsp; to view this page.
       </div>
     }
 

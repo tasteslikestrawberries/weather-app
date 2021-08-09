@@ -49,6 +49,7 @@
     "@iconify/icons-entypo-social": "^1.1.0",
     "@iconify/icons-flat-ui": "^1.1.0",
     "@iconify/icons-fluent": "^1.1.23",
+    "@iconify/icons-ion": "^1.1.2",
     "@iconify/react": "^1.1.4",
     "gh-pages": "^3.2.3"
   }
