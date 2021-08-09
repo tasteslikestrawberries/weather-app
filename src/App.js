@@ -17,12 +17,10 @@ import About from './components/About'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
-
-
 const App = () => {
   
   return ( 
-    <Router basename={process.env.PUBLIC_URL}> 
+    <Router> 
       <ScrollToTop />
       <>
           <Navigation />
