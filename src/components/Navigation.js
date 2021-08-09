@@ -47,15 +47,15 @@ const Navigation = () => {
                     </li>
                     }
                     <li>
-                        <Link to='/myprofile'>My Profile</Link>
+                        <Link to='/weather-app/myprofile'>My Profile</Link>
                     </li>
 
                     <li>
-                        <Link to='/'>Weather</Link>
+                        <Link to='/weather-app/'>Weather</Link>
                     </li>
                 
                     <li> 
-                        <Link to='/about'>About</Link>
+                        <Link to='/weather-app/about'>About</Link>
                     </li>
                 </ul>
             </nav>

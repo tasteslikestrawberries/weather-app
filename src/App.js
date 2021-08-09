@@ -22,7 +22,7 @@ import './styles.css';
 const App = () => {
   
   return ( 
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}> 
       <ScrollToTop />
       <>
           <Navigation />
