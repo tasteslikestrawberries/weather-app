@@ -1,4 +1,5 @@
 {
+  "homepage": "http://tasteslikestrawberries.github.io/weather-app",
   "name": "weather-app",
   "version": "0.1.0",
   "private": true,
@@ -18,6 +19,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -46,6 +49,7 @@
     "@iconify/icons-entypo-social": "^1.1.0",
     "@iconify/icons-flat-ui": "^1.1.0",
     "@iconify/icons-fluent": "^1.1.23",
-    "@iconify/react": "^1.1.4"
+    "@iconify/react": "^1.1.4",
+    "gh-pages": "^3.2.3"
   }
 }
