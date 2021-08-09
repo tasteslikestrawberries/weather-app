@@ -28,15 +28,15 @@ const App = () => {
           <Navigation />
 
           <Switch>
-            <Route path='/weather-app/about'>
+            <Route path='/about'>
               <About />
             </Route>
 
-            <Route path='/weather-app/myprofile'>
+            <Route path='/myprofile'>
               <UserProfile />
             </Route>
 
-            <Route path='/weather-app/'>
+            <Route path='/'>
               <Weather />
             </Route>
         </Switch>
