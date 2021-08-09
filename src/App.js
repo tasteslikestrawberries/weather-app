@@ -15,7 +15,7 @@ import About from './components/About'
 
 //styles
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles.css';
+import './styles.css';  
 
 const App = () => {
   
@@ -27,7 +27,7 @@ const App = () => {
 
           <Switch>
             <Route path='/about'>
-              <About />
+              <About /> 
             </Route>
 
             <Route path='/myprofile'>
