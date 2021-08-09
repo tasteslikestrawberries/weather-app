@@ -46,6 +46,7 @@ nav li {
   flex-wrap:wrap;
   margin-right:2rem;
   vertical-align: middle;
+
 }
 
 .homeContainer {
@@ -133,6 +134,28 @@ nav li {
   margin: 2rem 0rem 0rem 2rem;
 }
 
+.userLogo{
+  margin-top:2rem;
+  margin-bottom:1rem;
+  width:90px ;
+  border-radius:50px;
+  border: 5px solid #0d6efd;
+}
+
+.userInfo{
+  text-align: center;
+  margin:auto 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.noUser{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:3rem;
+  color:#0d6efd;
+}
+
 /*SPINNER*/
 .loader {
   margin-top:1rem;
@@ -189,6 +212,13 @@ nav li {
   nav li{
     margin-right:4rem;
     font-size:larger;
+  }
+
+  .userLogo{
+    margin-top:3rem;
+    margin-bottom:1rem;
+    width:150px ;
+    border-radius:100px;
   }
 
 }
