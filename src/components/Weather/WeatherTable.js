@@ -47,7 +47,7 @@ const WeatherTable = ({
                                             }
                                     </td>
                                     <td className='align-middle'> 
-                                        <img className='openWeatherIcon' src={`http://openweathermap.org/img/w/${icon}.png`} /> 
+                                        <img className='openWeatherIcon' src={`http://openweathermap.org/img/w/${icon}.png`} alt='weathericon'/> 
                                         { description }
                                     </td>
                                     

@@ -23,7 +23,7 @@ const WeatherForm = ( {handleSubmit, isError} ) => {
                 </Form.Group>
 
                 <div className='col text-center'>
-                    <Button className='button'
+                    <Button className='btn btn-primary btn-lg'
                             type='submit'  
                             variant='primary' 
                             style={{marginTop: '1rem'}}> Get Weather

@@ -9,11 +9,12 @@ import {
 
 //styles
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button'
 import './styles.css';
 
 //components
 import Weather from './components/Weather/Weather'
-import Login from './components/Login/Login'
+import UserProfile from './components/Login/UserProfile'
 import About from './components/About'
 
 const App = () => {
@@ -23,14 +24,16 @@ const App = () => {
       <>
         <nav>
               <ul>
-                  <li> 
-                     <Link to='/'>Weather</Link>
+                  <li>
+                    <Button  className='btn-lg' type='submit' value='search' variant='primary' style={{backgroundColor:'#0854c4', fontSize:'large'}}>Login</Button>
                   </li>
-                  <li> 
-                     <Link to='/login'>Login</Link>
+
+                  <li>
+                    <Link to='/'>Weather</Link>
                   </li>
+
                   <li> 
-                     <Link to='/about'>About</Link>
+                    <Link to='/about'>About</Link>
                   </li>
               </ul>
           </nav>
@@ -40,8 +43,8 @@ const App = () => {
               <About />
             </Route>
 
-            <Route path='/login'>
-              <Login />
+            <Route path='/myprofile'>
+              <UserProfile />
             </Route>
 
             <Route path='/'>
