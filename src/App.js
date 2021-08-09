@@ -10,7 +10,7 @@ import {
 import ScrollToTop from './components/ScrollToTop';
 import Navigation from './components/Navigation'
 import Weather from './components/Weather/Weather'
-import UserProfile from './components/Login/UserProfile'
+import UserProfile from './components/UserProfile'
 import About from './components/About'
 
 //styles
