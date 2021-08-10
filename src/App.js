@@ -20,7 +20,7 @@ import './styles.css';
 const App = () => {
   
   return ( 
-    <Router basename='/weather-app'> 
+    <Router> 
       <ScrollToTop />
       <>
           <Navigation />
