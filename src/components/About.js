@@ -15,7 +15,7 @@ const About = () => {
 
       <div className='homeContainer'>
         <h5 className='aboutText' style={{fontWeight:'200'}}>
-          Hello! This app was made to practice OAuth 2.0 authentication and fetching data from external APIs.
+          Hello! This app was made to practice Auth0 authentication and fetching data from external APIs.
         </h5>
         
         <br/>
