@@ -13,10 +13,10 @@ ReactDOM.render(
   <Auth0Provider
     domain={domain}
     clientId={clientId}
-    redirectUri={window.location.origin}>
+    redirectUri='https://tasteslikestrawberries.github.io/weather-app'>
     <App />
   </Auth0Provider>,
   document.getElementById('root')
 );
 
-
+/* redirectUri={window.location.origin}*/
