@@ -12,7 +12,7 @@ const About = () => {
         <Icon className='loginIcon' icon={info24Filled} style={{color: '#0d6efd', fontSize: '90px'}} />
         <span><h1>About</h1></span>
       </div>
-
+      
       <div className='homeContainer'>
         <h5 className='aboutText' style={{fontWeight:'200'}}>
           Hello! This app was made to practice Auth0 authentication and fetching data from external APIs.
