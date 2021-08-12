@@ -57,6 +57,10 @@ const Navigation = () => {
                     <li> 
                         <Link to='/about'>About</Link>
                     </li>
+
+                    <li> 
+                        <Link to='/privacypolicy'>Privacy Policy</Link>
+                    </li>
                 </ul>
             </nav>
             : null
@@ -85,6 +89,10 @@ const Navigation = () => {
                 
                     <li> 
                         <Link to='/about'>About</Link>
+                    </li>
+
+                    <li> 
+                        <Link to='/privacypolicy'>Privacy Policy</Link>
                     </li>
                 </ul>
             </nav>

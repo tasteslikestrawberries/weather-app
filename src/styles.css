@@ -175,6 +175,22 @@ nav li {
   outline:none;
   background: none;
 }
+.privacyPolicy{
+  padding:0 2rem;
+  text-align: justify;
+}
+.privacyPolicy h1, h2 {
+  color:#0d6efd;
+  text-align: center;
+}
+
+.privacyPolicy h1{
+  padding:1rem;
+}
+
+.privacyPolicy p{
+  padding:1rem 0;
+}
 
 /*SPINNER*/
 .loader {
@@ -283,6 +299,11 @@ nav li {
     align-items: center;
     margin: 3rem auto;
     font-size:large;
+  }
+
+  .privacyPolicy{
+    padding:0 15rem;
+    text-align: justify;
   }
 
 }
