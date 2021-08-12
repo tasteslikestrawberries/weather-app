@@ -7,7 +7,7 @@ const About = () => {
         <div className='privacyPolicy'>
 
             <h1>Privacy Policy for Weather App</h1>
-                <p>At <a href='https://tasteslikestrawberries.github.io/weather-app'>Weather App</a>, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Weather App and how we use it.</p>
+                <p>One of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Weather App and how we use it.</p>
                 <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Weather App. This policy is not applicable to any information collected offline or via channels other than this website. Our Privacy Policy was created with the help of the <a href="https://www.privacypolicygenerator.info/">Privacy Policy Generator</a>.</p>
 
                 <h2>Consent</h2>
