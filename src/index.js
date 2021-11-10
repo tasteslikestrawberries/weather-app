@@ -1,10 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './styles.css';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./styles.css";
+import App from "./App";
 
 //services
-import { Auth0Provider } from '@auth0/auth0-react';
+import { Auth0Provider } from "@auth0/auth0-react";
 
 const domain = process.env.REACT_APP_AUTH0_DOMAIN;
 const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
@@ -13,10 +13,11 @@ ReactDOM.render(
   <Auth0Provider
     domain={domain}
     clientId={clientId}
-    redirectUri='https://tasteslikestrawberries.github.io/weather-app'>
+    redirectUri="https://tasteslikestrawberries.github.io/weather-app"
+  >
     <App />
   </Auth0Provider>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 /* redirectUri={window.location.origin}*/

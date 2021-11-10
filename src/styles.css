@@ -1,89 +1,92 @@
 html {
   box-sizing: border-box;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
-  margin:0 auto;
+  margin: 0 auto;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.05rem;
   background-color: #f7f7f7;
   color: #242526;
 }
 
 nav {
-  display:flex;
+  display: flex;
   margin: auto;
-  background-color:#0d6efd; 
-  width:100%;
-  
+  background-color: #0d6efd;
+  width: 100%;
 }
 
-nav a, a:active, a:visited{
-  color:#f7f7f7;
+nav a,
+a:active,
+a:visited {
+  color: #f7f7f7;
   text-decoration: none;
 }
 
 nav a:hover {
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
-nav ul{
-  margin:0;
+nav ul {
+  margin: 0;
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
-  padding:1rem;
+  padding: 1rem;
   list-style-type: none;
 }
 
 nav li {
-  margin-right:2rem;
+  margin-right: 2rem;
   vertical-align: middle;
 }
 
-.smallNav{
-  display:none;
+.smallNav {
+  display: none;
 }
 
 .homeContainer {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   /*background-image: url(./components/assets/bgimg.jpg);*/
-  margin:auto;
-  width:100%;
+  margin: auto;
+  width: 100%;
   box-sizing: border-box;
 }
 
-.homeContainer :nth-child(1){
+.homeContainer :nth-child(1) {
   min-width: 30%;
 }
 
-.aboutText{
-  display:flex;
+.aboutText {
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin:0 3rem;
+  margin: 0 3rem;
   font-size: medium;
 }
 
-.weatherIcon{
-  width:80px;
-  height:80px;
+.weatherIcon {
+  width: 80px;
+  height: 80px;
   margin: 2rem 0;
 }
 
-.loginIcon{
-  width:80px;
-  height:80px;
+.loginIcon {
+  width: 80px;
+  height: 80px;
   margin: 1rem 0;
 }
 
@@ -96,22 +99,22 @@ nav li {
 }
 
 .header span {
-  color:#0d6efd;
+  color: #0d6efd;
 }
 
-.weatherTable{
-  display:flex;
+.weatherTable {
+  display: flex;
   flex-wrap: wrap;
-  column-gap:3rem;
+  column-gap: 3rem;
   box-sizing: border-box;
 }
 
 .cityCountry {
-  align-self:flex-start;
-  color:#0d6efd;
-  margin-top:2rem;
+  align-self: flex-start;
+  color: #0d6efd;
+  margin-top: 2rem;
   margin-bottom: 1rem;
-  margin-left:1rem;
+  margin-left: 1rem;
 }
 
 .cityCountry h3 {
@@ -119,85 +122,86 @@ nav li {
 }
 
 .weatherTable th {
-  color:#0d6efd;
+  color: #0d6efd;
   font-weight: bold;
   font-size: smaller;
-  
+
   white-space: normal !important;
-  word-wrap:break-word;
+  word-wrap: break-word;
 }
 
 .openWeatherIcon {
   display: inline-block;
-  max-width: 0px
+  max-width: 0px;
 }
 
-.errMsg{
+.errMsg {
   font-size: medium;
-  color:#e41b1b;
+  color: #e41b1b;
   margin: 2rem 0rem 0rem 2rem;
 }
 
-.userLogo{
-  margin-top:2rem;
-  margin-bottom:1rem;
-  width:90px ;
-  border-radius:50px;
+.userLogo {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 90px;
+  border-radius: 50px;
   border: 5px solid #0d6efd;
 }
 
-.userInfo{
+.userInfo {
   text-align: center;
-  margin:auto 2rem;
-  font-family: 'Roboto', sans-serif;
+  margin: auto 2rem;
+  font-family: "Roboto", sans-serif;
 }
 
-.noUser{
-  display:flex;
+.noUser {
+  display: flex;
   justify-content: center;
   align-items: center;
   margin: 3rem auto;
-  font-size:large;
-  font-weight:200;
+  font-size: large;
+  font-weight: 200;
 }
 
-.hamburgerWrapper{
+.hamburgerWrapper {
   display: none;
 }
 
 .hamburgerIcon {
-  display:none;
-  margin:1rem;
+  display: none;
+  margin: 1rem;
 }
 
-.hamburgerBtn{
-  border:none;
-  outline:none;
+.hamburgerBtn {
+  border: none;
+  outline: none;
   background: none;
 }
-.privacyPolicy{
-  padding:0 2rem;
+.privacyPolicy {
+  padding: 0 2rem;
   text-align: justify;
 }
 
-.privacyPolicy h1, h2 {
-  color:#0d6efd;
+.privacyPolicy h1,
+h2 {
+  color: #0d6efd;
   text-align: center;
 }
 
-.privacyPolicy h1{
-  padding:1rem;
+.privacyPolicy h1 {
+  padding: 1rem;
 }
 
-.privacyPolicy p{
-  padding:1rem 0;
+.privacyPolicy p {
+  padding: 1rem 0;
 }
 
 /*SPINNER*/
 .loader {
-  margin-top:1rem;
+  margin-top: 1rem;
   border: 4px solid #f3f3f3;
-  border-top: 4px solid #0d6efd; 
+  border-top: 4px solid #0d6efd;
   border-radius: 50%;
   width: 25px;
   height: 25px;
@@ -205,107 +209,109 @@ nav li {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*SMALL SCREENS*/
 @media (max-width: 440px) {
   nav {
-    display:none;
+    display: none;
   }
-  .hamburgerWrapper{
+  .hamburgerWrapper {
     display: flex;
     justify-content: flex-end;
-    margin:0;
+    margin: 0;
   }
 
   .hamburgerIcon {
-    display:block;
+    display: block;
   }
 
   .smallNav {
-    display:block;
+    display: block;
     justify-content: center;
   }
-  .smallNav ul{
-    display:flex;
+  .smallNav ul {
+    display: flex;
     align-items: center;
     flex-direction: column;
-    gap:1rem;
+    gap: 1rem;
   }
-  .smallNav ul li{
-    align-self:center;
-    font-size:large;
-    margin:0;
+  .smallNav ul li {
+    align-self: center;
+    font-size: large;
+    margin: 0;
   }
 }
 
 /*DESKTOP SCREENS*/
 @media (min-width: 60rem) {
-  .aboutText{
+  .aboutText {
     font-size: large;
   }
 
-  .weatherIcon{
-    width:100px;
-    height:100px;
+  .weatherIcon {
+    width: 100px;
+    height: 100px;
   }
 
-  .loginIcon{
-    width:100px;
-    height:100px;
+  .loginIcon {
+    width: 100px;
+    height: 100px;
     margin: 1rem 0;
   }
 
   .weatherTable {
     margin: 0 20vw;
     min-width: 50%;
-    margin-top:3rem;
+    margin-top: 3rem;
   }
 
-  .weatherTable span{
-    font-size:larger;
+  .weatherTable span {
+    font-size: larger;
   }
 
   .weatherTable th {
-    font-size:larger;
-    text-align: center;   
+    font-size: larger;
+    text-align: center;
   }
 
   .weatherTable td {
-    font-size:x-large;
+    font-size: x-large;
     text-align: center;
   }
 
   nav {
-    padding:0;
+    padding: 0;
   }
 
-  nav li{
-    margin-right:4rem;
-    font-size:larger;
+  nav li {
+    margin-right: 4rem;
+    font-size: larger;
   }
 
-  .userLogo{
-    margin-top:3rem;
-    margin-bottom:1rem;
-    width:150px ;
-    border-radius:100px;
+  .userLogo {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    width: 150px;
+    border-radius: 100px;
   }
 
-  .noUser{
-    display:flex;
+  .noUser {
+    display: flex;
     justify-content: center;
     align-items: center;
     margin: 3rem auto;
-    font-size:large;
+    font-size: large;
   }
 
-  .privacyPolicy{
-    padding:0 15rem;
+  .privacyPolicy {
+    padding: 0 15rem;
     text-align: justify;
   }
-
 }
-
